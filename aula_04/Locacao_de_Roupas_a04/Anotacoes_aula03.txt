@@ -1,0 +1,71 @@
+@Test: Indica que um determinado método é um método de teste.
+
+@DisplayName: Declara um nome de exibição personalizado para a classe ou método de teste.
+
+@TestMthodOrder: Usado para configurar a ordem de execução dos métodos de teste;
+-Métodos de ordenamento(MethodOrderer):
+
+	*Random: Ordena os métodos de maneira aleatória.
+		@TestMethodOrder(Method.Random.class)
+		
+	*MethodName: Classifica os métodos de teste alfanumericamente com base em seu nome de
+	 método e listas de parâmetros formais.
+		@TestMethodOrder(MethodOrderer.MethodName.class)
+	
+	*Displayname: Classifica os métodos de teste alfanumericamente com base em seus nomes de exibição.
+	 Caso os métodos não possuam @DisplayName, esse método funcionará como o @MethodName.
+		@TestMethodOrder(MethodOrderer.DisplayName.class)
+		
+	*OrderAnnotation: Classifica métodos de teste numericamente com base em valores especificados por
+	 meio de notação @Order.
+	 	@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+	 	
+@BeforeEach: Indica que o método anotado deve ser executado antes de cada método de teste.
+
+@AfterEach: Indica que o método anotado deve ser executado depois de cada método de teste.
+
+@BeforeAll: Indica que o método anotado deve ser execudato antes de TUDO, até mesmo antes da classe 
+ser instanciada.
+
+@AfterAll: Indica que o método anotado deve ser executado depois de TUDO, quando todos os outros 
+métodos tiverem sido executados.
+
+**Importante: Os métodos que vão receber as anotações @BeforeAll e @AfterAll precisam ser declarados
+como static.
+
+@Disabled: Usado para desabilitar uma classe ou método de teste.	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+		
+	
